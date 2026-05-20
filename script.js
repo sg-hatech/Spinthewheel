@@ -1,19 +1,42 @@
-const prizes = [
-  { short: "Unicorn Tumbler", long: "Unicorn Tumbler", color: "#f6c21f", text: "#231f20" },
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag", color: "#08a846", text: "#112318" },
-  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher", color: "#2f6ee8", text: "#ffffff" },
-  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation", color: "#e41f34", text: "#ffffff" },
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag", color: "#08a846", text: "#112318" },
-  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher", color: "#2f6ee8", text: "#ffffff" },
-  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation", color: "#e41f34", text: "#ffffff" },
-  { short: "Unicorn Tumbler", long: "Unicorn Tumbler", color: "#f6c21f", text: "#231f20" },
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag", color: "#08a846", text: "#112318" },
-  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher", color: "#2f6ee8", text: "#ffffff" },
-  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation", color: "#e41f34", text: "#ffffff" },
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag", color: "#08a846", text: "#112318" },
-  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher", color: "#2f6ee8", text: "#ffffff" },
-  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation", color: "#e41f34", text: "#ffffff" },
+const colorCombos = {
+  "Color Combo 1": [
+    { color: "#f6c21f", text: "#231f20" },
+    { color: "#08a846", text: "#112318" },
+    { color: "#2f6ee8", text: "#ffffff" },
+    { color: "#e41f34", text: "#ffffff" },
+  ],
+  "Color Combo 2": [
+    { color: "#6f0b2b", text: "#ffffff" },
+    { color: "#c2a262", text: "#231f20" },
+    { color: "#ffffff", text: "#6f0b2b" },
+    { color: "#ff1515", text: "#ffffff" },
+  ],
+};
+
+const activeColorCombo = "Color Combo 2";
+const wheelColors = colorCombos[activeColorCombo];
+
+const prizeSequence = [
+  { short: "Unicorn Tumbler", long: "Unicorn Tumbler" },
+  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
+  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
+  { short: "Unicorn Tumbler", long: "Unicorn Tumbler" },
+  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
+  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher", long: "Bao Zi Lin TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
 ];
+
+const prizes = prizeSequence.map((prize, index) => ({
+  ...prize,
+  ...wheelColors[index % wheelColors.length],
+}));
 
 const canvas = document.querySelector("#wheel");
 const ctx = canvas.getContext("2d");

@@ -63,6 +63,13 @@ h1 {
   line-height: 1;
 }
 
+.brand-logo {
+  display: block;
+  width: min(260px, 78%);
+  height: auto;
+  margin-top: 18px;
+}
+
 .spin-button,
 .secondary-button {
   min-height: 56px;
@@ -176,14 +183,14 @@ h1 {
 .pointer {
   position: absolute;
   z-index: 3;
-  right: max(-4px, calc(50% - min(39vw, 360px) - 14px));
+  right: max(-28px, calc(50% - min(39vw, 360px) - 40px));
   top: 50%;
   width: clamp(42px, 7vw, 72px);
   height: clamp(36px, 6vw, 62px);
-  background: linear-gradient(135deg, #1f63db, #4e8cff);
+  background: linear-gradient(135deg, #f8fafc 0%, #c9ced6 45%, #8f98a6 100%);
   clip-path: polygon(0 50%, 100% 0, 82% 50%, 100% 100%);
   transform: translateY(-50%);
-  filter: drop-shadow(0 7px 7px rgba(20, 66, 140, 0.32));
+  filter: drop-shadow(0 7px 7px rgba(75, 83, 96, 0.34));
 }
 
 .winner-modal {
@@ -304,7 +311,7 @@ h1 {
   }
 
   .pointer {
-    right: -10px;
+    right: -28px;
   }
 }
 

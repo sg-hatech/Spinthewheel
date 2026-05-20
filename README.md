@@ -1,4 +1,4 @@
-# Singlife POGIS - Unicorn Prize Wheel
+# Singlife POGIS Prize Wheel
 
 A static prize wheel for the Unicorn event. The wheel always keeps the same 14 segments after every spin:
 
@@ -21,4 +21,4 @@ Open `index.html` in a browser, or serve the folder with any static web server.
 
 ## Customize
 
-Prize labels and quantities are in `script.js`. The center logo is `Unicorn logo.jpg`.
+Prize labels, quantities, and named color sets are in `script.js`. Set `activeColorCombo` to `"Color Combo 1"` or `"Color Combo 2"` to switch the wheel colors. The center logo is `Unicorn logo.jpg`, and the header logo is `singlife-logo.png`.
