@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7a0f2f" />
+    <title>Singlife POGIS - Unicorn Prize Wheel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="page-title">
+      <section class="panel" aria-label="Prize wheel controls">
+        <div>
+          <p class="eyebrow">Prize Draw</p>
+          <h1 id="page-title">Singlife POGIS - Unicorn</h1>
+        </div>
+
+        <button id="spinButton" class="spin-button" type="button">
+          <span class="button-icon" aria-hidden="true">Spin</span>
+          Spin the Wheel
+        </button>
+
+        <div class="inventory" aria-label="Wheel prizes">
+          <h2>Wheel Prizes</h2>
+          <ul>
+            <li>Unicorn Tumbler</li>
+            <li>Unicorn Tote Bag</li>
+            <li>Bao Zi Lin TCM Voucher</li>
+            <li>Complimentary Family Wealth Consultation</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="wheel-stage" aria-label="Spin wheel">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="wheel-shell">
+          <canvas id="wheel" width="920" height="920" aria-label="Prize wheel canvas"></canvas>
+          <button id="centerSpin" class="center-logo" type="button" aria-label="Spin the wheel">
+            <img src="Unicorn%20logo.jpg" alt="Unicorn logo" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div id="winnerModal" class="winner-modal" role="dialog" aria-modal="true" aria-labelledby="winnerTitle" hidden>
+      <div class="winner-card">
+        <button id="closeWinner" class="close-button" type="button" aria-label="Close winner announcement">x</button>
+        <div class="sparkles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="winner-kicker">Congratulations</p>
+        <h2 id="winnerTitle">You won!</h2>
+        <p id="winnerPrize" class="winner-prize"></p>
+        <button id="spinAgain" class="secondary-button" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
