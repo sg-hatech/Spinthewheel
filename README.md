@@ -21,4 +21,4 @@ Open `index.html` in a browser, or serve the folder with any static web server.
 
 ## Customize
 
-Prize labels, quantities, and named color sets are in `script.js`. Set `activeColorCombo` to `"Color Combo 1"` or `"Color Combo 2"` to switch the wheel colors. The center logo is `Unicorn logo.jpg`, and the header logo is `singlife-logo.png`.
+Prize labels, quantities, and named color sets are in `script.js`. Set `activeColorCombo` to `"Color Combo 1"` or `"Color Combo 2"` to switch the wheel colors. Color Combo 2 uses Singlife Red, Teal, Mandarin, and Berry. The center logo is `Unicorn logo.jpg`, and the header logo is `singlife-logo.png`.

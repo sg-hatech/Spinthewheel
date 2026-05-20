@@ -6,10 +6,10 @@ const colorCombos = {
     { color: "#e41f34", text: "#ffffff" },
   ],
   "Color Combo 2": [
-    { color: "#6f0b2b", text: "#ffffff" },
-    { color: "#c2a262", text: "#231f20" },
-    { color: "#ffffff", text: "#6f0b2b" },
-    { color: "#ff1515", text: "#ffffff" },
+    { color: "#ff0008", text: "#ffffff" },
+    { color: "#19d3c5", text: "#123332" },
+    { color: "#ffa168", text: "#3a1f0f" },
+    { color: "#883e89", text: "#ffffff" },
   ],
 };
 
