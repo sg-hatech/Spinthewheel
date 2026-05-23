@@ -2,9 +2,8 @@
 
 A static prize wheel for the Unicorn event. The wheel always keeps the same 14 segments after every spin:
 
-- Unicorn Tumbler
 - Unicorn Tote Bag
-- Bao Zi Lin TCM Voucher
+- BZL TCM Voucher
 - Complimentary Family Wealth Consultation
 
 ## Run Locally
