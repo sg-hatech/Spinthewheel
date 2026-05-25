@@ -17,16 +17,20 @@ const activeColorCombo = "Color Combo 2";
 const wheelColors = colorCombos[activeColorCombo];
 
 const prizeSequence = [
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
+  { short: "Unicorn Tumbler", long: "Unicorn Tumbler" },
   { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
   { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
   { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
   { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
   { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
-  { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "Unicorn Tumbler", long: "Unicorn Tumbler" },
   { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
   { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
   { short: "Unicorn Tote Bag", long: "Unicorn Tote Bag" },
+  { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
+  { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
   { short: "BZL TCM Voucher $10", long: "BZL TCM Voucher" },
   { short: "Complimentary Consultation", long: "Complimentary Family Wealth Consultation" },
 ];
